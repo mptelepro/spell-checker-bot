@@ -231,7 +231,7 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= "https://telegra.ph/file/4af8709f22d7c752fa63b.jpg",
-                caption=f"<b>📂 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ :</b> <code>{query}</code>\n<b>🗂️Total File :- {(len_results)} </b>\n<b>📍Requested By:- {update.from_user.mention}</b>\n<b>🔔 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/mcnewmovies'>Ⓜ️©സിനിമകൾⓂ️©</a></b>\n<b>⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Movies_Club_2019'>M🌀𝚅𝙸𝙴𝚂_𝙲𝙻𝚄𝙱</a></b>\n<b>👮‍♂ ɴᴏᴛɪᴄᴇ : <code>ɪ𝙵 ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ 𝙵ɪʟᴇ𝚂 ᴏ𝙵 ᴛʜɪ𝚂 ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀ𝚂ᴋᴇᴅ 𝙵ᴏʀ . ʟᴏᴏᴋ ᴀᴛ ɴᴇ𝚇ᴛ ᴘᴀɢᴇ</code></b>",
+                caption=f"<b>📂 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ :</b> <code>{query}</code>\n<b>🗂️ Total File :- {(len_results)} </b>\n<b>📍 Requested By:- {update.from_user.mention}</b>\n<b>📽️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/mcnewmovies'>Ⓜ️©സിനിമകൾⓂ️©</a></b>\n<b>©️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Movies_Club_2019'>M🌀𝚅𝙸𝙴𝚂_𝙲𝙻𝚄𝙱</a></b>\n<b>📃 ɴᴏᴛɪᴄᴇ : <code>ɪ𝙵 ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ 𝙵ɪʟᴇ𝚂 ᴏ𝙵 ᴛʜɪ𝚂 ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀ𝚂ᴋᴇᴅ 𝙵ᴏʀ . ʟᴏᴏᴋ ᴀᴛ ɴᴇ𝚇ᴛ ᴘᴀɢᴇ</code></b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
