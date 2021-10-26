@@ -31,16 +31,17 @@ async def start(bot, update):
                 caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    'Developers', url="https://t.me/Mo_Tech_YT"
-                                )
-                        ]
-                    ]
-                )
-            )
+            [
+                [
+                    InlineKeyboardButton('★彡[ꜱʜᴀʀᴇ]彡★', url="https://t.me/share/url?url=https%3A//t.me/share/url%3Furl%3Dhttps%253A//t.me/Movies_Club_2019")
+                ],
+                [
+                    InlineKeyboardButton('𝙎𝙐𝙋𝙋𝙊𝙍𝙏', url="https://t.me/Cinemas_Tickets"),
+                    InlineKeyboardButton('𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url="https://t.me/mcallmovies")
+                ]
+            ]
+        )
+    )
         except Exception as e:
             await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
             LOGGER(__name__).error(e)
