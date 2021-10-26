@@ -134,7 +134,7 @@ async def auto_filter(bot, update):
         Send_message=await bot.send_video(
                 chat_id=update.chat.id,
                 video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-                caption=f"<b>Hai 😛Nanba😛 Couldn't Find This Movie.Please Try Again Or Search Google Or Not Get Movie Report Admins👉</b>"
+                caption=f"<b>Hai <u>Nanba Couldn't Find This Movie.Please Try Again Or Search Google Or Not Get Movie Report To 𒆜🅰🅳🅼🅸🅽🆂𒆜\n\n</u></b>"
                         f"<b><a href='https://t.me/Myfreak123'>𒆜🅰🅳🅼🅸🅽🆂𒆜</a></b>\n\n"
                         f"<b>ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക🔍അഥവാ കറക്റ്റ് സ്പെല്ലിങ്ങ് ആണെങ്കിൽ Contact Admin👍കൂടുതൽ അറിയാൻ വീഡിയോ കാണുക</b>(25 Sec)",
                 parse_mode="html",
