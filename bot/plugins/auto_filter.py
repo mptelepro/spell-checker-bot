@@ -76,11 +76,11 @@ async def auto_filter(bot, update):
             if file_size < 1024:
                 file_size = f"[{file_size} B]"
             elif file_size < (1024**2):
-                file_size = f"[{str(round(file_size/1024, 2))} KiB] "
+                file_size = f"[{str(round(file_size/1024, 2))} KB] "
             elif file_size < (1024**3):
-                file_size = f"[{str(round(file_size/(1024**2), 2))} MiB] "
+                file_size = f"[{str(round(file_size/(1024**2), 2))} MB] "
             elif file_size < (1024**4):
-                file_size = f"[{str(round(file_size/(1024**3), 2))} GiB] "
+                file_size = f"[{str(round(file_size/(1024**3), 2))} GB] "
             
             
             file_size = "" if file_size == ("[0 B]") else file_size
@@ -179,10 +179,11 @@ async def auto_filter(bot, update):
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"♻️ Page 1/{len_result if len_result < max_pages else max_pages} ♻️", callback_data="ignore")
         ])
         
         
+        result[0].append([ InlineKeyboardButton(f"🔰•⊹٭𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻٭⊹•🔰", url="https://t.me/joinchat/Qdw9ffZKXMxmMTg1") ])
         # if show_invite is True Append invite link buttons
         if show_invite:
             
