@@ -36,8 +36,8 @@ async def start(bot, update):
                     InlineKeyboardButton('★彡[ꜱʜᴀʀᴇ]彡★', url="https://t.me/share/url?url=https%3A//t.me/share/url%3Furl%3Dhttps%253A//t.me/Movies_Club_2019")
                 ],
                 [
-                    InlineKeyboardButton('𝙎𝙐𝙋𝙋𝙊𝙍𝙏', url="https://t.me/Cinemas_Tickets"),
-                    InlineKeyboardButton('𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url="https://t.me/mcallmovies")
+                    InlineKeyboardButton('★ꜱᴜᴘᴘᴏʀᴛ★', url="https://t.me/joinchat/Qdw9ffZKXMxmMTg1"),
+                    InlineKeyboardButton('★ꜱᴇʀɪᴇꜱ★', url="https://t.me/MoviesClubSeriesonly")
                 ]
             ]
         )
