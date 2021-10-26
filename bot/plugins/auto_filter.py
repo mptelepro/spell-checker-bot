@@ -134,7 +134,7 @@ async def auto_filter(bot, update):
         Send_message=await bot.send_video(
                 chat_id=update.chat.id,
                 video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-                caption=f"<b><u>Hai Nanba Couldn't Find This Movie In My DataBase🥺🔎Search Google For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To Admins\n\n</u></b>"
+                caption=f"<b><u>⭕️Hai Nanba Couldn't Find This Movie In My DataBase🥺</b></u>\n<b><u>⭕️Search Google🔎 For Correct Spelling And Sent It Here🙏Else Not Get Movie Report To Admins\n\n</u></b>"
                         f"<b><a href='https://t.me/Myfreak123'>𒆜🅰🅳🅼🅸🅽🆂𒆜</a></b>\n\n"
                         f"<b>ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക🔍അഥവാ കറക്റ്റ് സ്പെല്ലിങ്ങ് ആണ് എങ്കിൽ അഡ്മിൻസിനു മെസ്സേജ് നൽകുക.ഫയൽ അപ്‌ലോഡ് ചെയ്യുന്നതാണ്👍കൂടുതൽ അറിയാൻ വീഡിയോ കാണുക</b>(25 Sec)",
                 parse_mode="html",
