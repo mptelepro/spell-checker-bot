@@ -71,10 +71,10 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('🏠 𝙷𝚘𝚖𝚎', callback_data='start'),
-        InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝 🚩', callback_data='about')
+        InlineKeyboardButton('★ʜᴏᴍᴇ★', callback_data='start'),
+        InlineKeyboardButton('★ᴀʙᴏᴜᴛ★', callback_data='about')
     ],[
-        InlineKeyboardButton('🔐 𝙲𝚕𝚘𝚜𝚎 🔐', callback_data='close')
+        InlineKeyboardButton('★ᴄʟᴏꜱᴇ★', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -92,12 +92,12 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('👤 @𝙼𝚛𝚔_𝚈𝚃 👤', url='https://t.me/MRK_YT')
+        InlineKeyboardButton('★ᴄʀᴇᴀᴛᴏʀ★', url='https://t.me/AlbertEinstein_TG')
     ],[
-        InlineKeyboardButton('👤 @𝙰𝚕𝚋𝚎𝚛𝚝𝙴𝚒𝚗𝚜𝚝𝚎𝚒𝚗𝚃𝙶 👤', url='https://t.me/AlbertEinstein_TG')
+        InlineKeyboardButton('★彡[ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɢɪᴛʜᴜʙ]彡★', url='https://github.com/Sreejithmadmax')
     ],[
-        InlineKeyboardButton('🏠 𝙷𝚘𝚖𝚎', callback_data='start'),
-        InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 🔐', callback_data='close')
+        InlineKeyboardButton('★ʜᴏᴍᴇ★', callback_data='start'),
+        InlineKeyboardButton('★ᴄʟᴏꜱᴇ★', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
