@@ -47,27 +47,25 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('👨‍💼 𝙼𝚊𝚜𝚝𝚎𝚛', url='https://t.me/MRK_YT'),
-        InlineKeyboardButton('𝙷𝚎𝚕𝚙 🤔', callback_data="help")
+        InlineKeyboardButton('★ᴄʀᴇᴀᴛᴏʀ★', url='https://t.me/AlbertEinstein_TG'),
+        InlineKeyboardButton('★ʜᴇʟᴘ★', callback_data="help")
     ],[
-        InlineKeyboardButton('🖥️ 𝚃𝚞𝚝𝚘𝚛𝚒𝚊𝚕 𝚅𝚒𝚍𝚎𝚘 🖥️', url='https://youtu.be/uAHl5jvnrhk')
+        InlineKeyboardButton('★彡[ʙʟɪɴᴅᴇʀ ᴛɢ]彡★', url='https://t.me/Myfreak123')
     ],[
-        InlineKeyboardButton('🗣️ 𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝', url='https://t.me/Mo_Tech_group'),
-        InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 🤖', url='https://t.me/Mo_Tech_YT')
+        InlineKeyboardButton('★ɢʀᴏᴜᴘ★', url='https://t.me/Movies_Club_2019'),
+        InlineKeyboardButton('★ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇꜱ★', url='https://t.me/mcnewmovies')
     ],[
-        InlineKeyboardButton('💥 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎 𝙼𝚢 𝚈𝚘𝚞𝚃𝚞𝚋𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💥', url='https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ')
+        InlineKeyboardButton('★彡[ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɢɪᴛʜᴜʙ]彡★', url='https://github.com/Sreejithmadmax')
    ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
-                update.from_user.first_name),
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
+    await bot.send_sticker(
+                chat_id = update.chat.id,
+                sticker= "CAACAgIAAxkBAAEBIkthdn0aVyTONxI9gAvIOyG-1cD6NAAC1AwAAnqLoEieLyIklDO8mx4E",
+                reply_markup=reply_markup,  
+                reply_to_message_id=update.message_id
+            )
 
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
