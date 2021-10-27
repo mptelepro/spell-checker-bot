@@ -9,46 +9,8 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@mcnewmovies"
-        if update_channel:
-            try:
-                user = await bot.get_chat_member(int(update_channel), update.chat.id)
-                if user.status == "kicked":
-                    await bot.send_message(
-                        chat_id=update.chat.id,
-                        text="Sorry Sir, You are Banned to use me.",
-                        parse_mode="markdown",
-                        disable_web_page_preview=True
-                    )
-                    return
-            except UserNotParticipant:
-                ident, file_id = cmd.text.split("_-_-_-_")
-                await bot.send_message(
-                    chat_id=update.chat.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url={update_channel})
-                            ],
-                            [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
-                            ]
-                        ]
-                    ),
-                    parse_mode="markdown"
-                )
-                return
-            except Exception:
-                await bot.send_message(
-                    chat_id=update.chat.id,
-                    text="Something went Wrong.",
-                    parse_mode="markdown",
-                    disable_web_page_preview=True
-                )
-                return
     
     try:
         file_uid = update.command[1]
